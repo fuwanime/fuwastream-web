@@ -21,12 +21,12 @@ export default function DownloadPage() {
         </p>
 
         <div className="mt-10 flex flex-col sm:flex-row gap-4">
-          <Button asChild size="lg" className="w-full sm:w-auto">
+          <Button asChild size="large" className="w-full sm:w-auto">
             <Link href={`${site.github}/releases/latest`}>
               Unduh rilis terbaru (APK)
             </Link>
           </Button>
-          <Button variant="outline" asChild size="lg" className="w-full sm:w-auto">
+          <Button variant="outlined" asChild size="large" className="w-full sm:w-auto">
             <Link href={`${site.github}/releases`}>Lihat semua rilis</Link>
           </Button>
         </div>

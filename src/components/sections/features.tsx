@@ -53,28 +53,28 @@ const FEATURES: FeatureItem[] = [
 
 export function FeatureGrid() {
   return (
-    <section className="px-4 py-12 md:py-24 border-y border-border">
+    <section className="px-4 py-12 md:py-24 border-y border-border bg-surface">
       <div className="mx-auto max-w-7xl">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold tracking-tight">Fitur utama</h2>
-          <p className="mt-4 text-lg text-muted-foreground">
+          <h2 className="text-headline-large font-medium tracking-tight">Fitur utama</h2>
+          <p className="mt-4 text-body-large text-muted-foreground">
             Yang tersedia dalam aplikasi resmi FuwaStream.
           </p>
         </div>
         <div className="grid md:grid-cols-3 gap-6">
           {FEATURES.map((feature) => (
-            <div key={feature.title} className="rounded-xl border border-border bg-card p-6 hover:border-brand/50 transition-colors">
-              <div className="rounded-lg bg-brand/10 p-3 text-brand mb-4 inline-block">{feature.icon}</div>
-              <h3 className="text-lg font-semibold">{feature.title}</h3>
-              <p className="mt-3 text-sm text-muted-foreground leading-relaxed">
+            <div key={feature.title} className="rounded-2xl border border-border bg-card p-6 hover:border-brand/50 transition-colors elevation-0 hover:elevation-2">
+              <div className="rounded-xl bg-brand/10 p-3 text-brand mb-4 inline-block">{feature.icon}</div>
+              <h3 className="text-title-medium font-medium">{feature.title}</h3>
+              <p className="mt-3 text-body-small text-muted-foreground leading-relaxed">
                 {feature.body}
               </p>
             </div>
           ))}
         </div>
-        <p className="mt-10 text-xs text-muted-foreground text-center">
+        <p className="mt-10 text-label-small text-muted-foreground text-center">
           Deskripsi fitur berdasarkan aplikasi resmi
-          <a href={site.github} className="hover:text-foreground transition-colors underline underline-offset-4">
+          <a href={site.github} className="hover:text-brand transition-colors underline underline-offset-4">
             fuwanime/fuwastream
           </a>
           .

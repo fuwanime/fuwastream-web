@@ -18,17 +18,17 @@ const SHOTS: Shot[] = [
 
 export function ScreenshotGallery() {
   return (
-    <section className="px-4 py-12 md:py-24">
+    <section className="px-4 py-12 md:py-24 bg-surface">
       <div className="mx-auto max-w-7xl">
         <div className="text-center max-w-3xl mx-auto mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold tracking-tight">Tampilan aplikasi</h2>
-          <p className="mt-4 text-lg text-muted-foreground">
+          <h2 className="text-headline-large font-medium tracking-tight">Tampilan aplikasi</h2>
+          <p className="mt-4 text-body-large text-muted-foreground">
             Layar aktual dari FuwaStream untuk Android.
           </p>
         </div>
         <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
           {SHOTS.map((shot) => (
-            <div key={shot.src} className="relative aspect-[9/16] overflow-hidden rounded-xl border border-border shadow-sm">
+            <div key={shot.src} className="relative aspect-[9/16] overflow-hidden rounded-2xl border border-border bg-surface-container-low shadow-sm">
               <Image
                 src={shot.src}
                 alt={shot.alt}

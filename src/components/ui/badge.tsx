@@ -4,21 +4,21 @@ import * as React from "react"
 import { cn } from "@/lib/utils"
 
 export interface BadgeProps extends React.HTMLAttributes<HTMLDivElement> {
-  variant?: "default" | "secondary" | "brand"
+  variant?: "filled" | "outlined" | "brand"
 }
 
 const variants = {
-  default: "border-transparent bg-muted text-muted-foreground",
-  secondary: "border-border bg-muted text-muted-foreground",
-  brand: "border-transparent bg-brand text-brand-foreground",
+  filled: "bg-brand text-brand-foreground",
+  outlined: "border border-border bg-surface-container-low text-on-surface-variant",
+  brand: "bg-brand/10 border border-brand/20 text-brand",
 }
 
 export const Badge = React.forwardRef<HTMLDivElement, BadgeProps>(
-  ({ className, variant = "default", ...props }, ref) => (
+  ({ className, variant = "outlined", ...props }, ref) => (
     <div
       ref={ref}
       className={cn(
-        "inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors",
+        "inline-flex items-center rounded-full border px-2.5 py-0.5 text-label-small font-medium transition-colors",
         variants[variant],
         className,
       )}

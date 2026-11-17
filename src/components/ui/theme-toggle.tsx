@@ -39,8 +39,8 @@ export function ThemeToggle() {
       onClick={toggle}
       aria-label={isDark ? "Ganti ke mode terang" : "Ganti ke mode gelap"}
       className={cn(
-        "inline-flex items-center justify-center rounded-md p-2 text-muted-foreground hover:text-foreground hover:bg-accent transition-colors",
-        "size-8",
+        "inline-flex items-center justify-center rounded-full p-2 text-muted-foreground hover:text-foreground hover:bg-surface-container-high transition-colors",
+        "size-8 elevation-0 hover:elevation-1 active:elevation-0",
       )}
     >
       <span className="sr-only">{isDark ? "Dark mode" : "Light mode"}</span>
