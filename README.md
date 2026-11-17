@@ -37,4 +37,4 @@ Configured as a Next.js static export (`output: "export"`). Works on Vercel, Net
 
 ## License
 
-See the main [fuwanime/fuwastream](https://github.com/fuwanime/fuwastream) repository for licensing information.
+See the main [fuwanime/fuwastream](https://github.com/fuwanime/fuwastream) repository (GPL-3.0).

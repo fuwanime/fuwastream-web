@@ -55,6 +55,16 @@ export default function AboutPage() {
                 Laporkan bug / usulkan fitur
               </Link>
             </li>
+            <li>
+              <Link
+                href="https://chat.whatsapp.com/BD9q9veoNaAIhkdneKD4us"
+                className="text-brand hover:underline"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Gabung komunitas WhatsApp
+              </Link>
+            </li>
           </ul>
         </section>
 
@@ -67,6 +77,16 @@ export default function AboutPage() {
             repositori resmi dan tidak berjaminan tentang ketersediaan,
             lisensi, atau legalitas konten pihak ketiga.
           </p>
+        </section>
+
+        <section className="mt-6 rounded-xl border border-border bg-secondary p-6">
+          <h2 className="text-xl font-semibold mb-3">Lisensi &amp; teknologi</h2>
+          <ul className="list-disc list-inside space-y-1 text-sm text-muted-foreground">
+            <li>Aplikasi utama dibangun dengan <strong>Kotlin</strong> untuk Android.</li>
+            <li>Lisensi aplikasi: <strong>GPL-3.0</strong>.</li>
+            <li>Sumber manga: <strong>MangaDex · Shinigami · Komiku · WEBTOON</strong>.</li>
+            <li>Bahasa aplikasi: <strong>Indonesia · Melayu · Inggris · Mandarin</strong>.</li>
+          </ul>
         </section>
       </div>
     </section>

@@ -76,7 +76,8 @@ export default function DownloadPage() {
           <p className="text-xs text-muted-foreground">
             Rilis yang disediakan melalui GitHub Releases adalah rilis stabil
             resmi. Cabang rilis lain (beta/nightly) tidak dikelola oleh situs
-            ini kecuali diberitakan secara resmi.
+            ini kecuali diberitakan secara resmi. Aplikasi utama berlisensi
+            GPL-3.0.
           </p>
         </section>
       </div>
